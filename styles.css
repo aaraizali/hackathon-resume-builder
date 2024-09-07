@@ -1,41 +1,84 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+/* General Reset */
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-section {
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-form {
-    margin-top: 20px;
-}
-
+/* Form Elements */
 form label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
-form input {
-    margin-bottom: 10px;
-    padding: 8px;
+form input[type="text"],
+form input[type="email"] {
     width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-button {
-    padding: 10px 15px;
-    background-color: #007BFF;
+form button {
+    background: #5cb85c;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+form button:hover {
+    background: #4cae4c;
 }
 
+/* Resume Container Styling */
 #dynamic-resume {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume Actions Styling */
+#resume-actions {
     margin-top: 20px;
+}
+
+#resume-actions button {
+    background: #0275d8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#resume-actions button:hover {
+    background: #025aa5;
+}
+
+#resume-link {
+    margin-top: 10px;
+    font-size: 1.1em;
 }

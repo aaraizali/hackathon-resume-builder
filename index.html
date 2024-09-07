@@ -2,58 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Resume Builder</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="personal-info">
-        <h2>Personal Information</h2>
-        <p>Name: Aaraiz Ali</p>
-        <p>Contact: aaraizali2215@gmail.com</p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor's in Artificial Intelligence - Sindh Madarsatul Islam University</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>TypeScript</li>
-            <li>HTML & CSS</li>
-            <li>Python</li>
-        </ul>
-    </section>
-
-    <section id="work-experience">
-        <h2>Work Experience</h2>
-        <p>Web Developer Intern at XYZ Company</p>
-    </section>
-
+    <h1>Dynamic Resume Builder</h1>
     <form id="resume-form">
-        <h2>Build Your Resume</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
         <label for="name">Name:</label>
-        <input type="text" id="name" required><br>
+        <input type="text" id="name" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" required><br>
+        <input type="email" id="email" required>
 
-        <label for="education">Education:</label>
-        <input type="text" id="education-input" required><br>
+        <label for="education-input">Education:</label>
+        <input type="text" id="education-input" required>
 
-        <label for="skills">Skills (comma separated):</label>
-        <input type="text" id="skills-input" required><br>
+        <label for="skills-input">Skills (comma separated):</label>
+        <input type="text" id="skills-input" required>
 
-        <label for="work">Work Experience:</label>
-        <input type="text" id="work-input" required><br>
+        <label for="work-input">Work Experience:</label>
+        <input type="text" id="work-input" required>
 
-        <button type="submit">Generate Resume</button>
+        <button type="button" id="generate-resume">Generate Resume</button>
     </form>
 
-    <section id="dynamic-resume"></section>
+    <div id="dynamic-resume"></div>
+
+    <div id="resume-actions">
+        <button id="share-link">Share Resume</button>
+        <button id="download-pdf">Download as PDF</button>
+        <p id="resume-link"></p>
+    </div>
 
     <script src="script.js"></script>
 </body>
